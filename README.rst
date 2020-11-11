@@ -19,3 +19,5 @@ treasures to support his poor family.
 
 For Jack to win and survive, we MUST to help Jack retrieves as much treasures
 and items to fight against the giants.
+
+Hope you enjoy the game!
