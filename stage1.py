@@ -22,6 +22,19 @@ def stage1(player, questions):
                     say("Good luck!!!")
         q = random.randint(0, 1)
 
+        if q:
+            random_question = random.choice(question_number)
+            question_number.remove(random_question)
+            question = questions[str(random_question)]
+            solution = question["answer"]
+            choices = question["choice"]
+            say(question["question"])
+            answer = askchoice(choices, "Select a choice(1-4): ")
+            if choices[answer - 1] == solution:
+                say("Well done! Let's go to the next level")
+            else:
+                player["hp"] -= 1
+                say("Wrong! Your HP is " + str(player["hp"]))
 
     else:
         return True
