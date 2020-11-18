@@ -24,4 +24,4 @@ def askword(choices, message=""):
             return answer
         else:
             print("Please enter the correct format!" + "(" + "/".join(choices)
-                     + ")")
+                  + ")")
