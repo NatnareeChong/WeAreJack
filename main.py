@@ -51,7 +51,12 @@ def main():
             say("Since you have all weapons.",
                 "You have to answer only two questions to kill the giant!")
             question_left = 2
-
+    special_question = loadspecialquestion()
+    stage2_result = stage2(player, special_question, question_left)
+    if not stage2_result:
+        say("You can't kill the giant!!! Good Bye O.O")
+        return
+    say("Congratulations!!!!! You won the game :D")
 
 def loadquestion():
     questions = None
