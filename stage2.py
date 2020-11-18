@@ -20,6 +20,17 @@ def stage2(player, special_question, question_left):
                     say("Congrats! Your HP has been increased!")
                 else:
                     say("Good luck!!!")
-
+        random_question = random.choice(question_number)
+        question_number.remove(random_question)
+        question = special_question[str(random_question)]
+        solution = question["answer"]
+        choices = question["choice"]
+        say(question["question"])
+        answer = askchoice(choices, "Select a choice(1-4): ")
+        if choices[answer - 1] == solution:
+            say("Correct! You can go to the next level")
+        else:
+            player["hp"] -= 1
+            say("Wrong! Your HP is " + str(player["hp"]))
     else:
         return True
