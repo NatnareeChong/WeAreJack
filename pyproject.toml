@@ -4,7 +4,8 @@ version = "0.1.0"
 description = "Jack's adventure in the giant land"
 authors = ["Pradchayaporn Nonthavanich <jigsawwpuzzles@gmail.com>",
             "Natnaree Chongsiriwattana <khawnat.c@gmail.com>",
-            "ziying wu <nthysj@gmail.com>"]
+            "ziying wu <nthysj@gmail.com>"
+            "chollada panbutr <c-chollada84@hotmail.com>"]
 license = "AGPL-3.0-or-later"
 
 [tool.poetry.dependencies]
