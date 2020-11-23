@@ -1,0 +1,17 @@
+{
+    "1":{
+        "question":"1+5",
+        "choice":["5","6","7","8"],
+        "answer":"6"
+    },
+    "2":{
+        "question":"What colour is the golden pin?",
+        "choice":["Black","Gold","Pink","Blue"],
+        "answer":"Gold"
+    },
+    "3":{
+        "question":"How did Jack get to the giant land",
+        "choice":["Flew","Use magic","Climb magic bean","High jump"],
+        "answer":"Climb magic bean"
+    },
+  
