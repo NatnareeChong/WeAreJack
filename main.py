@@ -68,6 +68,28 @@ class Start(Event):
         return "CONTINUE"
 
 
+class Start():
+
+    def enter(self, player):
+        """Give the player the start messages and then just CONTINUE."""
+        self.times_event_occured += 1
+        self.say("Advanture into the JACK land!")
+        self.say("You might have heard of the story Jack and the magic beans.",
+                 "Jack accidentally get a hold of the bean yesterday and "
+                 " planted them in his back garden.")
+        self.say("He watered them day after day not knowing its magical",
+                 "property. As time passes the tiny beans grow into a giant "
+                 "bean tree")
+        self.say("Now the adventure in the giant land await him.",
+                 "For Jack to win and survive, we MUST to help Jack retrieves "
+                 " as much treasures and items to fight against the giants.")
+        self.say(
+            "Untold riches await if only you can get the the center "
+            "before the Minotaur catches you"
+        )
+        return "CONTINUE"
+
+
 def main():
     """Start the game."""
     player = {}
