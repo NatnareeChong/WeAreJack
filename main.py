@@ -1,4 +1,5 @@
 """
+
 Advanture into the JACK land!
 
 You might have heard of the story Jack and the magic beans. Jack accidentally
@@ -14,7 +15,6 @@ For Jack to win and survive, we MUST to help Jack retrieves as much treasures
 and items to fight against the giants.
 
 Hope you enjoy the game!
-
 Authors: Natnaree Chongsiriwattana, Ziying Wu, Chollada Panbutr,
  Pradchayaporn Nonthavanich
 
@@ -30,6 +30,42 @@ from utils import say
 from stage1 import stage1
 from stage2 import stage2
 import json
+import time
+
+
+class Event:
+
+    def __init__(self):
+        self.times_event_occured = 0
+
+    def say(self, message):
+        """
+        Print a message to the player.
+        """
+        time.sleep(1)
+        print("\n" + "[" + "\033[30;42;1m" + message + "\033[0m" + "]" + "\n")
+
+
+class Start(Event):
+    """This is the start event."""
+
+    def enter(self):
+        """Give the player the start messages and then just CONTINUE."""
+        self.times_event_occured += 1
+        self.say("Advanture into the JACK land!")
+        self.say("You might have heard of the story Jack and the magic beans.",
+                 "Jack accidentally get a hold of the bean yesterday and "
+                 " planted them in his back garden.")
+        self.say("He watered them day after day not knowing its magical",
+                 "property. As time passes the tiny beans grow into a giant "
+                 "bean tree")
+        self.say("Now the adventure in the giant land await him.",
+                 "For Jack to win and survive, we MUST to help Jack retrieves "
+                 " as much treasures and items to fight against the giants.")
+        self.say(
+            "Untold riches await if only you can get the the center "
+            "before the Minotaur catches you")
+        return "CONTINUE"
 
 
 def main():
