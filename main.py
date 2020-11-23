@@ -28,6 +28,7 @@ Usage:
 
 from utils import say
 from stage1 import stage1
+from stage2 import stage2
 import json
 
 
@@ -58,9 +59,17 @@ def main():
         return
     say("Congratulations!!!!! You won the game :D")
 
+
 def loadquestion():
     questions = None
     with open("question.json", "r") as question:
+        questions = json.load(question)
+    return questions
+
+
+def loadspecialquestion():
+    questions = None
+    with open("special_question.json", "r") as question:
         questions = json.load(question)
     return questions
 
