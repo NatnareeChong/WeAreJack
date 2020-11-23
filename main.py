@@ -49,7 +49,7 @@ def main():
         if k != "healing" and k not in weapons and v > 0:
             weapons.append(k)
         if len(weapons) == 4:
-            say("Since you have all weapons.",
+            say("Since you have all the weapons.",
                 "You have to answer only two questions to kill the giant!")
             question_left = 2
     special_question = loadspecialquestion()
