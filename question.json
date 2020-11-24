@@ -14,4 +14,39 @@
         "choice":["Flew","Use magic","Climb magic bean","High jump"],
         "answer":"Climb magic bean"
     },
-  
+    "4":{
+        "question":"2+5",
+        "choice":["5","6","7","8"],
+        "answer":"7"
+    },
+    "5":{
+        "question":"2+5",
+        "choice":["5","6","7","8"],
+        "answer":"7"
+    },
+    "6":{
+        "question":"2+5",
+        "choice":["5","6","7","8"],
+        "answer":"7"
+    },
+    "7":{
+        "question":"2+5",
+        "choice":["5","6","7","8"],
+        "answer":"7"
+    },
+    "8":{
+        "question":"2+5",
+        "choice":["5","6","7","8"],
+        "answer":"7"
+    },
+    "9":{
+        "question":"2+5",
+        "choice":["5","6","7","8"],
+        "answer":"7"
+    },
+    "10":{
+        "question":"2+5",
+        "choice":["5","6","7","8"],
+        "answer":"7"
+    }
+}
