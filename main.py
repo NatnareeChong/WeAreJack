@@ -42,9 +42,8 @@ def main():
         "property. As time passes the tiny beans grow into a giant "
         "bean tree")
     say("Now the adventure in the giant land await him."
-        "For Jack to win and survive,we MUST to help Jack retrieves"
-        " as much treasures and items to fight against the giants."
-        )
+        "For Jack to win and survive, we MUST help Jack retrieves"
+        " as much items as posible to fight against the giants.")
     player = {}
     player["hp"] = 3
     player["items"] = {}
@@ -64,12 +63,13 @@ def main():
                 "You have to answer only two questions to kill the giant!")
             question_left = 2
     if player["hp"] <= 0:
-        say("Game over!!")
+        say("Game over!! You ran out of live energy")
         quit()
     special_question = loadspecialquestion()
     stage2_result = stage2(player, special_question, question_left)
     if not stage2_result:
-        say("You can't kill the giant!!! Good Bye O.O")
+        say("You can't kill the giant!!! Now you can enjoy your wealth!"
+            " Good Bye ~O.O~")
         return
     say("Congratulations!!!!! You won the game :D")
 
