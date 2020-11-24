@@ -63,6 +63,9 @@ def main():
             say("Since you have all the weapons.",
                 "You have to answer only two questions to kill the giant!")
             question_left = 2
+    if player["hp"] <= 0:
+        say("Game over!!")
+        quit()
     special_question = loadspecialquestion()
     stage2_result = stage2(player, special_question, question_left)
     if not stage2_result:

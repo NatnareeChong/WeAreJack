@@ -1,6 +1,6 @@
 {
     "1": {
-        "What is the capital city of Australia?",
+        "question": "What is the capital city of Australia?",
         "choice": ["Canberra", "Sydney", "Melbourne", "Victoria"],
         "answer": "Canberra"
     },
@@ -11,8 +11,7 @@
         "answer": "Guido van Rossum"
     },
     "3": {
-        "question": "How many permanent members are there on the UN security"
-                    "council?",
+        "question": "How many permanent members are there on the UN security council?",
         "choice": ["4", "5", "6", "7"],
         "answer": "5"
     },
