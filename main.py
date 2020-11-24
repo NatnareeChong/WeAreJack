@@ -34,6 +34,17 @@ import json
 
 def main():
     """Start the game."""
+    say("Advanture into the JACK land!")
+    say("You might have heard of the story Jack and the magic beans"
+        "Jack accidentally get a hold of the bean yesterday and "
+        " planted them in his back garden.")
+    say("He watered them day after day not knowing its magical"
+        "property. As time passes the tiny beans grow into a giant "
+        "bean tree")
+    say("Now the adventure in the giant land await him."
+        "For Jack to win and survive,we MUST to help Jack retrieves"
+        " as much treasures and items to fight against the giants."
+        )
     player = {}
     player["hp"] = 3
     player["items"] = {}

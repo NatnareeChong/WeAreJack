@@ -1,41 +1,5 @@
 from utils import say, askchoice, askword
 import random
-import time
-
-
-class Questions:
-
-    def __init__(self):
-        self.times_event_occured = 0
-
-    def say(self, message):
-        time.sleep(1)
-        print("\n" + "[" + "\033[30;42;1m" + message + "\033[0m" + "]" + "\n")
-
-    def enter(self, player):
-        raise NotImplementedError
-
-
-class Start(Questions):
-
-    def enter(player):
-        """Give the player the start messages and then just CONTINUE."""
-        player.times_event_occured += 1
-        player.say("Advanture into the JACK land!")
-        player.say("You might have heard of the story Jack and the magic beans"
-                   "Jack accidentally get a hold of the bean yesterday and "
-                   " planted them in his back garden.")
-        player.say("He watered them day after day not knowing its magical",
-                   "property. As time passes the tiny beans grow into a giant "
-                   "bean tree")
-        player.say("Now the adventure in the giant land await him.",
-                   "For Jack to win and survive,we MUST to help Jack retrieves"
-                   " as much treasures and items to fight against the giants."
-                   )
-        player.say(
-            "Untold riches await if only you can get the the center "
-            "before the Minotaur catches you")
-        return "CONTINUE"
 
 
 def stage1(player, questions):
@@ -65,7 +29,7 @@ def stage1(player, questions):
             question = questions[str(random_question)]
             solution = question["answer"]
             choices = question["choice"]
-            say(question["question" + "Are you ready for the adventure?"])
+            say(question["question"])
             answer = askchoice(choices, "Select a choice(1-4): ")
             if choices[answer - 1] == solution:
                 say("Correct! You can go to the next level")
