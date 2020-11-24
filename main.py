@@ -34,7 +34,7 @@ import json
 
 def main():
     """Start the game."""
-    name = input("Please enter your name: ")
+    name = input("What should we call you?: ")
     say("Advanture into the JACK land!")
     say("You might have heard of the story Jack and the magic beans"
         "Jack accidentally get a hold of the bean yesterday and "
