@@ -1,47 +1,47 @@
 {
     "1":{
-        "question":"1+5",
-        "choice":["5","6","7","8"],
-        "answer":"6"
+        "question":"When a moving bus stops suddenly, the passenger are pushed forward because of the",
+        "choice":["friction between the earth and the bus","friction between the passengers and the earth","inertia of the passengers","inertia of the bus"],
+        "answer":"inertia of the passengers"
     },
     "2":{
-        "question":"What colour is the golden pin?",
-        "choice":["Black","Gold","Pink","Blue"],
-        "answer":"Gold"
+        "question":"When is the World's Diabetes Day?",
+        "choice":["14th November","11th December","15th October","1st July"],
+        "answer":"14th November"
     },
     "3":{
-        "question":"How did Jack get to the giant land",
-        "choice":["Flew","Use magic","Climb magic bean","High jump"],
-        "answer":"Climb magic bean"
+        "question":"When light passes from air into glass it experiences change of",
+        "choice":["frequency and wavelength","frequency and speed","wavelength and speed","frequency, wavelength and speed"],
+        "answer":"wavelength and speed"
     },
     "4":{
-        "question":"2+5",
-        "choice":["5","6","7","8"],
-        "answer":"7"
+        "question":"Joule is the unit of",
+        "choice":["temperature","pressure","energy","heat"],
+        "answer":"energy"
     },
     "5":{
-        "question":"2+5",
-        "choice":["5","6","7","8"],
+        "question":"Name the instrument used to measure relative humidity",
+        "choice":["Hydrometer","Hygrometer","Barometer","Mercury Thermometer"],
         "answer":"7"
     },
     "6":{
-        "question":"2+5",
-        "choice":["5","6","7","8"],
-        "answer":"7"
+        "question":"The 'Black flag' signifies",
+        "choice":["evolution/danger","peace","protest","truce"],
+        "answer":"protest"
     },
     "7":{
-        "question":"2+5",
-        "choice":["5","6","7","8"],
-        "answer":"7"
+        "question":"What is the capital city of brazil",
+        "choice":["Rio de Janeiro","São Paulo","Brasilia","Santos"],
+        "answer":"Brasilia"
     },
     "8":{
-        "question":"2+5",
-        "choice":["5","6","7","8"],
-        "answer":"7"
+        "question":"2+5+8+2+8+9+7+10+7=?",
+        "choice":["56","57","58","59"],
+        "answer":"58"
     },
     "9":{
-        "question":"2+5",
-        "choice":["5","6","7","8"],
+        "question":"Entomology is the science that studies",
+        "choice":["Behavior of human beings","Insects","The origin and history of technical and scientific terms","The formation of rocks"],
         "answer":"7"
     },
     "10":{
