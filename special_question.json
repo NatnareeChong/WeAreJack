@@ -1,0 +1,29 @@
+{
+    "1": {
+        "What is the capital city of Australia?",
+        "choice": ["Canberra", "Sydney", "Melbourne", "Victoria"],
+        "answer": "Canberra"
+    },
+    "2": {
+        "question": "Who designed Python",
+        "choice": ["Bjarne Stroustrup", "Brendan Eich", "Guido van Rossum",
+                   "Tim Berners-Lee"],
+        "answer": "Guido van Rossum"
+    },
+    "3": {
+        "question": "How many permanent members are there on the UN security"
+                    "council?",
+        "choice": ["4", "5", "6", "7"],
+        "answer": "5"
+    },
+    "4": {
+        "question": "How many notes are there in a musical scale?",
+        "choice": ["5", "6", "7", "8"],
+        "answer": "7"
+    },
+    "5": {
+        "question": "How many keys are there on a piano?",
+        "choice": ["82", "84", "86", "88"],
+        "answer": "88"
+    }
+}
