@@ -47,6 +47,6 @@
     "10":{
         "question":"How did Jack get in to the Giant land?",
         "choice":["Fly","Run","Climd a giant bean","8"],
-        "answer":"7"
+        "answer":"Climd a giant bean"
     }
 }
