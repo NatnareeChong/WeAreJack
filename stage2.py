@@ -6,11 +6,12 @@ def stage2(player, special_question, question_left):
     question_number = [i for i in range(1, 6)]
     for round in range(question_left):
         if player["hp"] == 0:
-            say("Game Over!")
+            say("NOOO~~ Game Over! T_T You had failed to help Jack survived.")
             return False
-        say("This is giant level " + str(round + 1))
+        say("This is giant level " + str(round + 1) + " You have discovered a "
+            "special level in the giant's land!")
         if player["hp"] == 1:
-            say("You have only 1 HP left")
+            say("You have only 1 HP left. Try your best to survived!")
             if "healing" in player["items"] and player["items"]["healing"] > 0:
                 use = askword(["Y", "N"],
                               "Do you want to use healing potion(Y/N): ")
@@ -25,12 +26,16 @@ def stage2(player, special_question, question_left):
         question = special_question[str(random_question)]
         solution = question["answer"]
         choices = question["choice"]
-        say(question["question"])
+        say(question["question"] + "Choose the right answer to get closer"
+            "to the treassure")
         answer = askchoice(choices, "Select a choice(1-4): ")
         if choices[answer - 1] == solution:
-            say("Correct! You can go to the next level")
+            say("Correct! You can go to the next level. Now you are another "
+                "step closer to kill the giants!")
         else:
             player["hp"] -= 1
-            say("Wrong! Your HP is " + str(player["hp"]))
+            say("Look down! You are bleeding!! and Your HP is " +
+                str(player["hp"]) + "You choosed the wrong answer."
+                " Try to move faster and don't get caught by the giants")
     else:
         return True

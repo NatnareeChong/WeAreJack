@@ -3,7 +3,8 @@ import time
 
 def say(message):
     time.sleep(0.5)
-    print(message)
+    print("\n" + "~~<~~" + "\033[34;42;1m" + message + "\033[0m" +
+          "~~>~~" + "\n")
 
 
 def askchoice(choices, message=""):
