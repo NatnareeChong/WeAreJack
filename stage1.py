@@ -8,7 +8,7 @@ def stage1(player, questions):
         if player["hp"] == 0:
             say("NOOO~~ Game Over! T_T You had failed to help Jack survived.")
             return False
-        say("This is level " + str(round + 1) + "The land of Giants")
+        say("This is level " + str(round + 1) + " in the land of Giants")
         if player["hp"] == 1:
             say("You have only 1 HP left. Choose your next move wisely")
             if "healing" in player["items"] and player["items"]["healing"] > 0:

@@ -8,7 +8,8 @@ def stage2(player, special_question, question_left):
         if player["hp"] == 0:
             say("NOOO~~ Game Over! T_T You had failed to help Jack survived.")
             return False
-        say("This is giant level " + str(round + 1))
+        say("This is giant level " + str(round + 1) + " You have discovered a "
+            "special level in the giant's land!")
         if player["hp"] == 1:
             say("You have only 1 HP left. Try your best to survived!")
             if "healing" in player["items"] and player["items"]["healing"] > 0:
@@ -33,7 +34,8 @@ def stage2(player, special_question, question_left):
                 "step closer to kill the giants!")
         else:
             player["hp"] -= 1
-            say("Wrong! You are bleeding!! and Your HP is " + str(player["hp"])
-                + "Try to move faster and don't get caught by the giants")
+            say("Look down! You are bleeding!! and Your HP is " +
+                str(player["hp"]) + "You choosed the wrong answer."
+                " Try to move faster and don't get caught by the giants")
     else:
         return True
