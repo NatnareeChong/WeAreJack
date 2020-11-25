@@ -3,7 +3,7 @@ import time
 
 def say(message):
     time.sleep(0.5)
-    print("\n" + "~~<~~" + "\033[34;42;1m" + message + "\033[0m" +
+    print("\n" + "~~<~~" + "\033[34;1m" + message + "\033[0m" +
           "~~>~~" + "\n")
 
 
